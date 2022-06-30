@@ -1,0 +1,38 @@
+.navLink {
+    color: black;
+    text-decoration: none;
+}
+
+.nav--container{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+.nav--container-scroll{
+    display: flex;
+    position: sticky;
+    background-color: black;
+    width: 100%;
+}
+
+.nav--list{
+    display: flex;
+    list-style-type: none;
+    align-items: flex-start;
+    gap: 25px;
+    font-size: 1.2rem;
+}
+
+.nav--list li:hover{
+    text-decoration: underline;
+}
+
+.nav-center{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 800px;
+}
