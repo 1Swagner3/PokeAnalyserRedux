@@ -1,0 +1,23 @@
+
+.elCreatorForm-form{
+    display: flex;
+    flex-flow: column;
+}
+
+.elCreatorForm-name-input{
+    border-radius: 10px;
+    display: flex;
+    min-height: 10vh;
+    padding: 5%;
+    flex-flow: column;
+    box-shadow: 0px 2px 5px black;
+    background-color: #6E6E6E;
+    color: white;
+    border: 1px solid black;
+}
+
+input[type="text"], textarea {
+    background-color : #101010; 
+    color: white;
+    margin-top: 10%;
+  }

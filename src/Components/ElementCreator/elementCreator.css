@@ -1,0 +1,27 @@
+.elCreator-mega-container {
+    display: flex;
+    background-color: #414141;
+    padding-bottom: 20px;
+    flex-flow: column;
+    align-items: center;
+}
+
+.elCreator-super-container{
+    display: flex;
+    gap: 5%;
+    min-width: 75%;
+    margin-top: 5%;
+    padding-bottom: 100px;
+}
+
+.elCreator-form-container{
+    width: 30%;
+}
+
+.elCreator-preview-container{
+    width: 70%;
+}
+
+.elCreator-analyser-supercontainer{
+    width: 100%;
+}

@@ -1,1 +1,4 @@
-export const LOAD_ELEMENTLIST = "LOAD_ELEMENTLIST"
+export const PA_SELECT_TYPE ="PA_SELECT_TYPE"
+export const PA_DELETE_TYPE = "PA_DELETE_TYPE"
+export const PA_ANALYSE_TYPE = "PA_ANALYSE_TYPE"
+export const PA_CLEAR_ALL = "PA_CLEAR_ALL"

@@ -1,0 +1,11 @@
+.typeBox {
+    border: 1px solid white;
+    width: fit-content;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    margin-top: 5%;
+    border-radius: 10%;
+}

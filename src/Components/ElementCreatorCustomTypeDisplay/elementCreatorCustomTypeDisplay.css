@@ -1,0 +1,36 @@
+.elCreatorCustomType-container{
+    border-radius: 10px;
+    display: flex;
+    max-height: 20vh;
+    padding: 5%;
+    flex-flow: column;
+    margin-top: 3%;
+    box-shadow: 0px 2px 5px black;
+    overflow: scroll;
+    background-color: #101010;
+    color: white;
+    border: 3px solid #41008D;
+}
+
+.elCreatorCustomType-list{
+    margin: 0;
+    padding: 0;
+}
+
+.elCreatorCustomType-list-item{
+    list-style-type: none;
+    border-bottom: 1px solid white;
+}
+
+.elCreatorCustomType-list-item-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.elCreatorCustomType-lit-item-buttonRow{
+    display: flex;
+    gap: 5%;
+    align-self: center;
+    margin-right: 3%;
+}

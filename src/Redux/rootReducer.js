@@ -1,8 +1,12 @@
 import { combineReducers } from "redux";
-import { elementListReducer } from "./pokeAnalyser/pA-reducer";
+import { elementCreatorReducer } from "./elementCreator/eC-reducer";
+import {typeAnalyserReducer} from "./pokeAnalyser/pA-reducer";
+import { teamAnalyserReducer } from "./teamAnalyser/tA-reducer";
 
 const rootReducer = combineReducers({
-    elementList: elementListReducer,
+    typeAnalyser: typeAnalyserReducer,
+    teamAnalyser: teamAnalyserReducer,
+    elementCreator: elementCreatorReducer
 })
 
 

@@ -1,0 +1,56 @@
+.teamDisplayItem-container{
+    box-shadow: 0px 2px 7px black;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    width: 20vw;
+    text-align: center;
+    height: fit-content;
+    background-color: #101010;
+    color: white;
+    border: 3px solid #41008D;
+}
+
+.teamDisplayItem-deleterow{
+    align-self: flex-start;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.teamDisplayItem-deleteButton{
+    border: none;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: white;
+    background-color: #B80ABF;
+    border-radius: 15px 0px 15px 0px;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.teamDisplayItem-deleteButton:hover{
+    background-color: #8D0067;
+}
+
+.teamDisplayItem-buttonrow{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3%;
+    margin-right: 3%;
+}
+
+.teamDisplayItem-editButton{
+    border: none;
+    margin-left: 5%;
+    color: white;
+    background-color: #B80ABF;
+    border-radius: 15px 0px 15px 0px;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.teamDisplayItem-editButton:hover{
+    background-color: #8D0067;
+}

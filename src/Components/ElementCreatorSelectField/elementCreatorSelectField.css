@@ -1,0 +1,24 @@
+.elCreatorSelectField-addTypeButton{
+    width: 5vw;
+    height: 2.5vh;
+    background-color: #41008D;
+    border: none;
+    box-shadow: 0px 2px 3px black;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    border-radius: 25px;
+}
+
+.elCreatorSelectField-addTypeButton:hover{
+    box-shadow: 0px 4px 7px black;
+}
+
+.elCreatorSelectField-selectField{
+    width: 5vw;
+    height: 2.5vh;
+    cursor: pointer;
+    font-size: small;
+    background-color: #101010;
+    color: white;
+}

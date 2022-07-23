@@ -1,0 +1,5 @@
+.elCreatorPreviewDataDisplay-data{
+    text-transform: capitalize;
+    display: flex;
+    gap: 3%;
+}

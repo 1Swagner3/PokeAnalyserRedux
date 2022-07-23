@@ -1,1 +1,27 @@
+.btn-success{
+    background-color: #41008D;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
+.btn-success:hover{
+    background-color: #AA0AFF;
+}
+
+.btn-delete{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-delete:hover{
+    background-color: #B10303;
+}

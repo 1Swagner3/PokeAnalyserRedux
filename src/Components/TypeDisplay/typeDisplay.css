@@ -1,0 +1,57 @@
+
+.typeDisplay-superContainer{
+    box-shadow: 2px 4px 7px rgb(32, 32, 32);
+    border-radius: 25px;
+    border: 3px solid #41008D;
+    background-color:#101010;
+    height: fit-content;
+    width: 50%;
+    max-width: 300px;
+    color: white;
+}
+
+.typeDisplay-delete-button{
+    background-color: transparent;
+    border: none;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: white;
+    background-color: #B80ABF;
+    border-radius: 15px 0px 15px 0px;
+    width: 40px;
+    height: 20px;
+}
+
+.typeDisplay-delete-button:hover{
+    background-color: #8D0067;
+}
+
+.typeDisplay-content-container{
+    display: block;
+    text-align: center;
+}
+
+.typeDisplay-content-information{
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.typeDisplay-content-empty{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typeDisplay-content-information-items{
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.typeDisplay-defaulttext{
+    text-align: center;
+}

@@ -31,7 +31,8 @@ const Navbar = () => {
                     <div className='linkList'>
                         <ul className='nav--list'>
                             <Link to={'/pokeAnalyser'} className='navLink'><li>Analyser</li></Link>
-                            <Link to={'/typeCreator'} className='navLink'><li>Creator</li></Link>
+                            <Link to={'/teamAnalyser'} className= 'navLink'><li>Team Analyser</li></Link>
+                            <Link to={'/typeCreator'} className='navLink'><li>Type Creator</li></Link>
                         </ul>
                     </div>
                 </div>

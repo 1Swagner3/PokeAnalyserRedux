@@ -1,0 +1,30 @@
+
+.elCreatorPreview-container{
+    border-radius: 10px;
+    display: flex;
+    min-height: 40vh;
+    padding: 5%;
+    flex-flow: column;
+    box-shadow: 0px 2px 5px black;
+    justify-content: space-around;
+    background-color: #101010;
+    border: 3px solid #41008D;
+    color: white;
+    
+}
+
+.elCreatorPreview-name{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.elCreatorPreview-dataDisplay{
+    display: flex;
+    flex-flow: column;
+}
+
+.elCreatorPreview-buttonRow{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3%;
+}

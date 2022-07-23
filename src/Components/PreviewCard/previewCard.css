@@ -1,0 +1,101 @@
+.previewCard-super-container{
+    display: flex;
+    flex-flow: column;
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px black;
+    width: 20vw;
+    padding: 10%;
+    background-color: #101010;
+    min-height: 30vh;
+    justify-content: space-around;
+    color: white;
+    border: 3px solid #41008D;
+}
+
+.previewCard-typeSelector-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+.previewCard-typeSelector{
+    display: flex;
+}
+
+.previewCard-typeSelector h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.previewCard-typeSelector-deletebutton{
+    background-color: transparent;
+    border: none;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: white;
+    background-color: #B80ABF;
+    border-radius:100%;
+    width: 25px;
+    height: 12px;
+    margin-right: 5%;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.previewCard-typeSelector-deletebutton:hover{
+    background-color: #B10303;
+}
+
+.previewCard-result-section{
+    font-size: 0.9rem;
+    margin-bottom: 10%;
+}
+
+.previewCard-result-container-output{
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.previewCard-button-section{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    margin-top: 20%;
+}
+
+.previewCard-addTeam-button{
+    background-color: #41008D;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.previewCard-addTeam-button:hover{
+    background-color: #AA0AFF;
+}
+
+.previewCard-clear-button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.previewCard-clear-button:hover{
+    background-color: #B10303;
+}
+
+.previewCard-default-header{
+    text-align: center;
+}
