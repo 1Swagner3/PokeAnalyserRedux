@@ -30,6 +30,7 @@
     text-transform: capitalize;
     padding-bottom: 5%;
     font-size: 0.8rem;
+    align-items: center;
 }
 
 .elCreatorSelectionUnit-deleteButton{
@@ -45,4 +46,23 @@
 .elCreatorSelectionUnit-deleteButton:hover{
     background-color:#8D0067 ;
     box-shadow: 0px 2px 5px black;
+}
+
+@media only screen and (max-width: 550px){
+    .elCreatorSelectionUnit-container{
+        margin-top: 5%;
+    }
+
+    .elCreatorSelectionUnit-deleteButton{
+        background-color: transparent;
+        border: none;
+        padding: 8px;
+        box-shadow: none;
+        background-color: #41008D;
+        font-size: 0.6rem;
+    }
+
+    .elCreatorSelectionUnit-typeItem{
+        font-size: 1rem;
+    }
 }

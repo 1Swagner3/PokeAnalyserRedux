@@ -1,5 +1,6 @@
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash} from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteType } from '../../Redux/elementCreator/eC-actions'
 import ElementCreatorSelectField from '../ElementCreatorSelectField/elementCreatorSelectField'
@@ -39,7 +40,7 @@ const ElementCreatorSelectionUnit = ({category}) => {
                             return (
                                 <div className='elCreatorSelectionUnit-typeItem'>
                                     {type}
-                                    <button onClick={onDelete} type="button" id={type} className='elCreatorSelectionUnit-deleteButton'>X</button>
+                                    <button onClick={onDelete} type="button" id={type} className='elCreatorSelectionUnit-deleteButton'><FontAwesomeIcon icon={faTrash} /></button>
                                 </div>)
                         })
                     }

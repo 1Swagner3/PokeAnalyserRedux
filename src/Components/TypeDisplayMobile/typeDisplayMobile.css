@@ -1,0 +1,53 @@
+.typeDisplayMobile-super-container{
+    background-color: #101010;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.typeDiaplayMobile-unit-container{
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    align-items: center;
+}
+
+.typeDisplayMobile-name-unit{
+    width: 50%;
+}
+.typeDisplayMobile-caret-button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #B80ABF;
+    border: 2px solid #B80ABF;
+    border-radius: 100%;
+}
+
+.typeDisplayMobile-delete-button{
+    background-color: transparent;
+    border: none;
+    color: #B80ABF;
+    margin-right: 10px;
+}
+
+.typeDisplayMobile-default-text{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.typeDisplayMobile-info-container{
+    background-color: #101010;
+
+}
+
+.typeDisplayMobile-info-subcontainer{
+    display: flex;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+}

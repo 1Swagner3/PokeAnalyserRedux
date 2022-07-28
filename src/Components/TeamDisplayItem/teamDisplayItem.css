@@ -59,3 +59,9 @@
 .teamDisplayItem-editButton:hover{
     background-color: #8D0067;
 }
+
+@media only screen and (max-width: 550px){
+    .teamDisplayItem-name-section{
+        font-size: 0.8rem;
+    }
+}

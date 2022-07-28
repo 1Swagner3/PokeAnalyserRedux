@@ -81,6 +81,9 @@
     justify-content: space-between;
 }
 
+.analyser-display-container-mobile{
+    
+}
 .analyser-button-row{
     display: flex;
     gap: 2%;
@@ -125,13 +128,20 @@
 }
 
 @media only screen and (max-width: 550px){
+    .analyser-super-conatiner{
+        min-height: 80vh;
+    }
     .analyser-flex-container{
         flex-flow: column;
         align-items: center;
     }
 
     .analyser-typelist-container{
-        width: 37%;
+        width: 55%;
+        display: flex;
+        justify-content: space-around;
+        height: 10vh;
+        background-image: linear-gradient(45deg,  #41008D, #6000a4);
     }
 
     .analyser-display-container{
@@ -150,5 +160,20 @@
     .clearButton{
         width: 90%;
         height: 6vh;
+    }
+
+    .analyser-typelist-header-container{
+        height: 100%;
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: 0 0 0;
+    }
+
+    .analyser-typelist-list{
+        height: 100%;
+    }
+
+    .analyser-content-container{
+        width: 55%;
     }
 }

@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { ecAnalyse, ecClearAnalyser, ecDeleteCustomType, ecDeleteType, ecSelectCustomType, ecSelectType } from '../../Redux/elementCreator/eC-actions'
 import AnalyserResultsTable from '../AnalyserResultsTable/analyserResultsTable'
 import TypeDisplay from '../TypeDisplay/typeDisplay'
+import TypeDisplayMobile from '../TypeDisplayMobile/typeDisplayMobile'
 import './elementCreatorAnalyser.css'
 
 const ElementCreatorAnalyser = () => {
@@ -64,6 +65,22 @@ const ElementCreatorAnalyser = () => {
         setShowResults(false)
     }
 
+    //check window size to set components to mobile
+    const [mobile, setMobile] = useState(false)
+    const checkWidth = () => {
+        let width = window.innerWidth;
+        if(width > 550) {
+            setMobile(false)
+        }     
+        if(width < 550){
+            setMobile(true)
+        }
+    }
+    
+    useEffect(() => {
+        checkWidth()
+        window.addEventListener("resize", checkWidth)
+    })
 
     return (
        <>
@@ -110,10 +127,14 @@ const ElementCreatorAnalyser = () => {
                     </div>
                 </div>
                 <div className='eC-analyser-content-container'>
-                    <div className='eC-analyser-display-container'>
+                    {!mobile ? <div className='eC-analyser-display-container'>
                         <TypeDisplay selectedType={selectedType.type1} deleteFunction={deleteFunction}/>
                         <TypeDisplay selectedType={selectedType.type2} deleteFunction={deleteFunction}/>
-                    </div>
+                    </div> :
+                    <div className='analyser-display-container-mobile'>
+                        <TypeDisplayMobile selectedType={selectedType.type1} deleteFunction={deleteFunction} />
+                        <TypeDisplayMobile selectedType={selectedType.type2} deleteFunction={deleteFunction}/>
+                    </div>}
                     <br></br>
                     <div className='analyser-button-row'>
                         <button className='analyseButton' onClick={onAnalyse} disabled={canAnalyse}>Analyse</button>

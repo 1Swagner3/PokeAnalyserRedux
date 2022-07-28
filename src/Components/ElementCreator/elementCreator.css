@@ -41,3 +41,26 @@
     border-radius: 25px;
     box-shadow: 0 5px 10px rgb(16, 16, 16);
 }
+
+@media only screen and (max-width: 550px){
+    .elCreator-super-container{
+        flex-flow: column;
+    }
+
+    .elCreator-form-container{
+        width: 100%;
+    }
+
+    .elCreator-preview-container{
+        width: 100%;
+    }
+
+    .elCreator-form-container{
+        margin-bottom: 10%;
+    }
+    
+    .el-Creator-analyser-textbox{
+        height: 7vh;
+        font-size: 0.8rem;
+    }
+}

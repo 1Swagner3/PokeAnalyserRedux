@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteType, clearTypeSelection, addToTeam } from '../../Redux/teamAnalyser/tA-actions'
@@ -33,6 +35,7 @@ const PreviewCard = () => {
         if(selectedType1.name){
             dispatch(deleteType(selectedType1))
         }
+        setDetail(false)
     }
 
     const deleteType2 = (event) => {
@@ -40,11 +43,13 @@ const PreviewCard = () => {
         if(selectedType2.name){
             dispatch(deleteType(selectedType2))
         }
+        setDetail(false)
     }
 
     const clearSelection = (event) => {
         event.preventDefault()
         dispatch(clearTypeSelection())
+        setDetail(false)
     } 
 
     const renderName = (type1, type2) =>{
@@ -68,9 +73,14 @@ const PreviewCard = () => {
                 ...analyseSelectedTypesResult
             }))
         }
+        setDetail(false)
     }
     let analyseSelectedTypesResult = analyseTypes(selectedType)
 
+    const [detail, setDetail] = useState(false)
+    const toggleDetail = () => {
+        setDetail(!detail)
+    }
     return (
         <>
         <div className='previewCard-super-container'>
@@ -85,7 +95,7 @@ const PreviewCard = () => {
                         <h3>{selectedType2.name}</h3>
                     </div>}
                 </div>
-                <div className='previewCard-result-container'>
+                {detail && <div className='previewCard-result-container'>
                     {analyseSelectedTypesResult.superEffective.length > 0 && <div className='previewCard-result-section'>
                         <p><strong>Very Effective x4</strong></p>
                         <p className='previewCard-result-container-output'>{analyseSelectedTypesResult.superEffective.map( type =>  <TypeBox type={type} /> )}</p>
@@ -110,8 +120,9 @@ const PreviewCard = () => {
                         <p className='previewCard-result-container-output'>{analyseSelectedTypesResult.immunity.map( type =>  <TypeBox type={type} /> )}</p>
 
                     </div>}
-                </div>
+                </div>}
                 <div className='previewCard-button-section'>
+                    <button className='previewCard-caret-button' onClick={toggleDetail}>{!detail ? <FontAwesomeIcon icon={faCaretDown}/> : <FontAwesomeIcon icon={faCaretUp} />}</button>
                     <button className='previewCard-addTeam-button' onClick={addTeam}>Add to Team</button>
                     <button className='previewCard-clear-button' onClick={clearSelection}>Clear</button>
                 </div>

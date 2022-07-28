@@ -22,3 +22,15 @@
     background-color: #101010;
     color: white;
 }
+
+@media only screen and (max-width: 550px){
+    .elCreatorSelectField-addTypeButton{
+        width: 30%;
+        height: 4vh;
+    }
+
+    .elCreatorSelectField-selectField{
+        width: 30%;
+        height: 4vh;
+    }
+}

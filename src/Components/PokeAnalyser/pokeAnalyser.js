@@ -2,10 +2,10 @@ import './pokeAnalyser.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
 import TypeDisplay from '../TypeDisplay/typeDisplay'
-import analyseTypes from '../analyse'
 import AnalyserResultsTable from '../AnalyserResultsTable/analyserResultsTable'
 import { paAnalyseType, paClearAll, paDeleteType, paSelectType } from '../../Redux/pokeAnalyser/pA-actions'
 import Banner from '../Banner/banner'
+import TypeDisplayMobile from '../TypeDisplayMobile/typeDisplayMobile'
 
 
 const PokeAnalyser = () => {
@@ -52,6 +52,23 @@ const PokeAnalyser = () => {
         dispatch(paDeleteType(type))
     }
 
+    //check window size to set components to mobile
+    const [mobile, setMobile] = useState(false)
+    const checkWidth = () => {
+        let width = window.innerWidth;
+        if(width > 550) {
+            setMobile(false)
+        }     
+        if(width < 550){
+            setMobile(true)
+        }
+    }
+    
+    useEffect(() => {
+        checkWidth()
+        window.addEventListener("resize", checkWidth)
+    })
+
     return (
        <>
        <Banner title='Analyser' />
@@ -78,10 +95,14 @@ const PokeAnalyser = () => {
                         </div>
                     </div>
                     <div className='analyser-content-container'>
-                        <div className='analyser-display-container'>
+                        {!mobile ? <div className='analyser-display-container'>
                             <TypeDisplay selectedType={selectedType.type1} deleteFunction={deleteFunction}/>
                             <TypeDisplay selectedType={selectedType.type2} deleteFunction={deleteFunction}/>
-                        </div>
+                        </div> :
+                        <div className='analyser-display-container-mobile'>
+                            <TypeDisplayMobile selectedType={selectedType.type1} deleteFunction={deleteFunction} />
+                            <TypeDisplayMobile selectedType={selectedType.type2} deleteFunction={deleteFunction}/>
+                        </div>}
                         <br></br>
                         <div className='analyser-button-row'>
                             <button className='analyseButton' onClick={onAnalyse} disabled={canAnalyse}>Analyse</button>

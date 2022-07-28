@@ -1,10 +1,8 @@
-import { useDispatch } from 'react-redux'
 import TypeBox from '../TypeBox/typeBox'
 import './typeDisplay.css'
 
 const TypeDisplay = ({selectedType, deleteFunction}) => {
 
-    const dispatch = useDispatch()
 
     const onDeleteType = () => {
        deleteFunction(selectedType)
@@ -25,11 +23,15 @@ const TypeDisplay = ({selectedType, deleteFunction}) => {
                         </div>
                         <div>
                             <p><strong>Not Effective</strong></p>
-                            {selectedType.notEffective.length > 0 ? <p className='typeDisplay-content-information-items'>{selectedType.notEffective.map( type =>  <TypeBox type={type} /> )}</p> : <p>None</p>}
+                            {selectedType.notEffective.length > 0 ? <p className='typeDisplay-content-information-items'>
+                                {selectedType.notEffective.map( type =>  <TypeBox type={type} /> )}
+                                </p> : <p>None</p>}
                         </div>
                         <div>
                             <p><strong>Immunity</strong></p>
-                            {selectedType.immunity.length > 0 ?  <p className='typeDisplay-content-information-items'>{selectedType.immunity.map( type =>  <TypeBox type={type} /> )}</p> : <p>None</p>}
+                            {selectedType.immunity.length > 0 ?  <p className='typeDisplay-content-information-items'>
+                                {selectedType.immunity.map( type =>  <TypeBox type={type} /> )}
+                                </p> : <p>None</p>}
                         </div>
                     </div>
                 </div> : <div className='typeDisplay-content-empty'>

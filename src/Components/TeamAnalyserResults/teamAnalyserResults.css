@@ -24,10 +24,16 @@
     padding: 5%;
     color: white;
     box-shadow: 0 5px 10px #161616;
-
+    text-align: justify;
 }
 
 .teamAnalyserResults-paragraph-buttonrow{
     display: flex;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 550px){
+    .teamAnalyserResults-clearAll-btn{
+        width: 30%;
+    }
 }

@@ -12,11 +12,9 @@ const Navbar = () => {
 
     const checkWidth = () => {
         let width = window.innerWidth;
-
         if(width > 550) {
             setMobile(false)
         } 
-
         if(width < 550){
             setMobile(true)
         }
@@ -34,6 +32,7 @@ const Navbar = () => {
             changeBackground()
             // adding the event when scroll change background
             window.addEventListener("scroll", changeBackground)
+            checkWidth()
             window.addEventListener("resize", checkWidth)
         })
 

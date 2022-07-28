@@ -68,7 +68,7 @@
 }
 
 .previewCard-addTeam-button{
-    background-color: #41008D;
+    background-color: #AA0AFF;
     color: white;
     border: 1px solid black;
     border-radius: 20px;
@@ -97,4 +97,23 @@
 
 .previewCard-default-header{
     text-align: center;
+}
+
+.previewCard-caret-button{
+    background-color: transparent;
+    color: #AA0AFF;
+    border: 2px solid #AA0AFF;
+    border-radius: 100%;
+    padding: 3%;
+    margin-right: 18%;
+}
+
+@media only screen and (max-width: 550px){
+    .previewCard-super-container{
+        min-height: 10vh;
+    }
+
+    .previewCard-default-header{
+        opacity: 0.5;
+    }
 }
