@@ -1,5 +1,4 @@
 .resultsTableCrad-container{
-
     padding: 5%;
     background-color: #101010;
     color: white;
@@ -17,4 +16,8 @@
 .resultsTableCard-output{
     display: flex;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 550px){
+    
 }

@@ -1,6 +1,8 @@
 
 import { useDispatch } from 'react-redux'
 import { deleteTeamMember, editTeamMember } from '../../Redux/teamAnalyser/tA-actions'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash, faPen } from "@fortawesome/free-solid-svg-icons";
 import './teamDisplayItem.css'
 
 const TeamDisplayItem = ({data, index}) => {
@@ -19,11 +21,11 @@ const TeamDisplayItem = ({data, index}) => {
         <>
             <div className='teamDisplayItem-container'>
                 <div className='teamDisplayItem-deleterow'>
-                    <button className='teamDisplayItem-deleteButton' onClick={deleteMember}>X</button>
+                    <button className='teamDisplayItem-deleteButton' onClick={deleteMember}><FontAwesomeIcon icon={faTrash} /> </button>
                 </div>
-                <h3>{data.name}</h3>
+                <h3 className='teamDisplayItem-name-section'>{data.name}</h3>
                 <div className='teamDisplayItem-buttonrow'>
-                    <button className='teamDisplayItem-editButton' onClick={editMember}>Edit</button>
+                    <button className='teamDisplayItem-editButton' onClick={editMember}> <FontAwesomeIcon icon={faPen} /> </button>
                 </div>
             </div>
         </>
