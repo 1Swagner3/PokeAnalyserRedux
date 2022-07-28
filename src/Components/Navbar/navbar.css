@@ -13,9 +13,10 @@
 
 .nav--container-scroll{
     display: flex;
-    position: sticky;
-    background-color: black;
+    position: fixed;
+    background-color: #101010;
     width: 100%;
+    justify-content: center;
 }
 
 .nav--list{
@@ -24,6 +25,7 @@
     align-items: flex-start;
     gap: 25px;
     font-size: 1.2rem;
+    align-items: center;
 }
 
 .nav--list li:hover{
@@ -35,4 +37,20 @@
     justify-content: space-between;
     width: 80%;
     max-width: 800px;
+    align-items: center;
+}
+
+.logo{
+    background-image: url('../../../public/images/AnalyserLogo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 200px;
+}
+
+
+@media only screen and (max-width: 750px){
+    .navLink {
+        font-size: 80%;
+    }
 }

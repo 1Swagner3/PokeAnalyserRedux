@@ -1,0 +1,43 @@
+.burgerMenu-mega-container{
+    height: 50px;
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.burgerMenu-super-container{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    z-index: 1000;
+}
+
+.burgerMenu-navbox{
+    position: absolute;
+    top: 23px;
+    left: -115px;
+    width: 160px;
+}
+
+.burgerMenu-nav--list{
+    list-style: none;
+    padding: 10px;
+    background-color: #101010;
+}
+
+.burgerMenu-navLink{
+    text-decoration: none;
+    color: white;
+}
+
+.burgerMenu-list-item{
+    padding: 10px;
+}
+
+.burgerMenu-button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}

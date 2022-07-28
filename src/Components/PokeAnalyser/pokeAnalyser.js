@@ -88,7 +88,9 @@ const PokeAnalyser = () => {
                             <button className='clearButton' onClick={clearAll} >Clear</button>
                         </div>
                         <br></br>
-                        {showResults && <AnalyserResultsTable results={analyseResults} selectedType={selectedType}/>}
+                        <div className='analyser-results-table-container'>
+                            {showResults && <AnalyserResultsTable results={analyseResults} selectedType={selectedType}/>}
+                        </div>
                     </div>
                 </div>
             </div>

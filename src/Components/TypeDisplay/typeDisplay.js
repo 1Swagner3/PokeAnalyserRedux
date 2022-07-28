@@ -32,7 +32,9 @@ const TypeDisplay = ({selectedType, deleteFunction}) => {
                             {selectedType.immunity.length > 0 ?  <p className='typeDisplay-content-information-items'>{selectedType.immunity.map( type =>  <TypeBox type={type} /> )}</p> : <p>None</p>}
                         </div>
                     </div>
-                </div> : <div className='typeDisplay-content-empty'><h3 className='typeDisplay-defaulttext'>No type selected</h3></div>}
+                </div> : <div className='typeDisplay-content-empty'>
+                        <h3 className='typeDisplay-defaulttext'>No type selected</h3>        
+                    </div>}
             </div>
         </>
     )

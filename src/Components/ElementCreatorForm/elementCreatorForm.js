@@ -18,7 +18,7 @@ const ElementCreatorForm = () => {
         <>
         <div className='elCreatorForm-super-container'>
             <form id='elementCreatorForm' className='elCreatorForm-form'>
-                <div className='elCreatorForm-name-input'> TYPE NAME
+                <div className='elCreatorForm-name-input'> NAME
                     <input
                     type='text'
                     id='name'

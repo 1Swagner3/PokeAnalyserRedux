@@ -13,7 +13,7 @@ const AnalyserResultsTable = ({results, selectedType}) => {
         <>
             <div className='analyserResultsTable-superContainer'>
                 <div className='analyserResutlsTable-header'>
-                     <h1>Results for {selectedType.type1.name} / {selectedType.type2.name}</h1>
+                     <h1>Results for {selectedType.type1.name} & {selectedType.type2.name}</h1>
                 </div>
                 <div className='analyserResultsTable-content'>
                     {results.superEffective.length > 0 && <ResultsTableCards data={results.superEffective} header='Very Effective x4'/>}

@@ -6,6 +6,7 @@ const HomeScreen = () => {
         <>
         <div className='home-mega-container'>
             <div className='home-puprle'></div>
+            <div className='home-image'></div>
             <div className='home-super-container'>
                 <h1 className='home-header'>Poke Analyser</h1>
                 <div className='home-link-row'>

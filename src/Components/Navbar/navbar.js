@@ -1,10 +1,26 @@
 import './navbar.css'
 import { Link } from 'react-router-dom'
 import React, {useState, useEffect} from "react";
+import NavbarBurgerMenu from '../NavbarBurgerMenu/navbarBurgerMenu';
+
 
 const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false)
+    const [mobile, setMobile] = useState(false)
+
+
+    const checkWidth = () => {
+        let width = window.innerWidth;
+
+        if(width > 550) {
+            setMobile(false)
+        } 
+
+        if(width < 550){
+            setMobile(true)
+        }
+    }
 
     const changeBackground = () => {
         if (window.scrollY >= 66) {
@@ -18,15 +34,19 @@ const Navbar = () => {
             changeBackground()
             // adding the event when scroll change background
             window.addEventListener("scroll", changeBackground)
+            window.addEventListener("resize", checkWidth)
         })
 
 
     return (
         <>
+            {mobile ? <NavbarBurgerMenu /> :
             <div className={navbar ? "nav--container-scroll" : "nav--container"}>
                 <div className='nav-center'>
-                    <div className='logo'>
-                        <Link to={'/'} className='navLink'><h3>PokeAnalyser</h3></Link>
+                    <div>
+                        <Link to={'/'} className='navLink'>
+                            <div className='logo'></div>
+                        </Link>
                     </div>
                     <div className='linkList'>
                         <ul className='nav--list'>
@@ -36,7 +56,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> }
         </>
     )
 }

@@ -1,9 +1,15 @@
 .analyserResultsTable-content{
     display: flex;
+    flex-flow: column;
     flex-wrap: wrap;
     gap: 8%
 }
 
 .analyserResutlsTable-header{
     color: white;
+    background-color: #101010;
+    box-shadow: 0 5px 10px #161616;
+    text-align: center;
+    padding: 1%;
+    border-radius: 25px;
 }

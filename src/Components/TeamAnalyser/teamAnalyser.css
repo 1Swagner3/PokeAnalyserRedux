@@ -3,27 +3,31 @@
     background-color: #414141;
     justify-content: center;
     padding-bottom: 20px;
+    background-image: url('../../../public/images/BGv4-light_Zeichenfläche\ 1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
 .teamAnalyser-ultra-container{
     display: flex;
-    gap: 10%;
+    justify-content: space-between;
     max-width: 900px;
-    min-width: 600px;
+    width: 75%;
     margin-top: 5%;
+ 
 }
 .teamAnalyser-super-container{
     display: flex;
     flex-flow: column;
+    width: 35%;
 }
 
 .teamAnalyser-typeList-container{
     height: 35vh;
-    width: fit-content;
     display: flex;
     flex-flow: column;
     border-radius: 15px;
     box-shadow: 0px 2px 3px black;
-    background-color: ghostwhite;
     margin-bottom: 10%;
     background-color: #41008D;
 }
@@ -35,14 +39,13 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    width: 25vw;
-    background-color: #6E6E6E;
+    background-color: #101010;
     color: white;
 }
 
 .teamAnalyser-typeList-listitem{
     border-bottom: 1px solid black;
-    padding: 10px;
+    padding: 20px;
 }
 
 .teamAnalyser-typeList-listitem:hover{
@@ -57,5 +60,6 @@
 }
 
 .teamAnalyser-teamDisplay-container{
-    width: 55vw;
+    width: 60%;
+
 }

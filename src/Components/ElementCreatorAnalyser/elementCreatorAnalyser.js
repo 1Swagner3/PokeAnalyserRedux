@@ -69,7 +69,7 @@ const ElementCreatorAnalyser = () => {
        <>
         <div className='eC-analyser-mega-container'>
             <div className=' eC-analyser-super-conatiner'>
-                <div>
+                <div className='eC-analyser-typelist-super-container'>
                     <div className='eC-analyser-typelist-container'>
                         <div className='analyser-typelist-header-container'>
                             <h3 className='analyser-typelist-header'>Types</h3>

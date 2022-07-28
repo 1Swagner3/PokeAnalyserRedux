@@ -8,6 +8,10 @@
     width: 50%;
     max-width: 300px;
     color: white;
+    background-image: url('../../../public/images/star.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50%;
 }
 
 .typeDisplay-delete-button{
@@ -54,4 +58,11 @@
 
 .typeDisplay-defaulttext{
     text-align: center;
+}
+
+@media only screen and (max-width: 550px){
+    .typeDisplay-superContainer{
+        width: 100%;
+        margin-top: 10px;
+    }
 }
