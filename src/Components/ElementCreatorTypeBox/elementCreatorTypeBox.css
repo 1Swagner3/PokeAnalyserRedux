@@ -1,8 +1,9 @@
 .elementCreatorTypeBox{
-    background-color: #A30AF5;
+    background-color: #B80ABF;
     color: white;
     border-radius: 25px 0 25px 0;
     padding: 2%;
     font-size: 0.7rem;
     text-align: center;
+    font-weight: bold;
 }

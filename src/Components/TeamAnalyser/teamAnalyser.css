@@ -65,6 +65,10 @@
 }
 
 @media only screen and (max-width: 550px){
+    .teamAnalyser-mega-container{
+        min-height: 50vh;
+    }
+    
     .teamAnalyser-ultra-container{
         width: 100%;
         flex-flow: column;

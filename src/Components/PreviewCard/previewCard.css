@@ -5,7 +5,7 @@
     box-shadow: 0px 2px 3px black;
     padding: 10%;
     background-color: #101010;
-    min-height: 30vh;
+    min-height: fit-content;
     justify-content: space-around;
     color: white;
     border: 3px solid #41008D;
@@ -65,16 +65,18 @@
     justify-content: flex-end;
     gap: 5%;
     margin-top: 20%;
+    height: 30px;
 }
 
 .previewCard-addTeam-button{
-    background-color: #AA0AFF;
+    background-color: #B80ABF;
     color: white;
     border: 1px solid black;
     border-radius: 20px;
     padding: 6px;
     cursor: pointer;
     font-weight: bold;
+    width: 30%;
 }
 
 .previewCard-addTeam-button:hover{
@@ -89,6 +91,7 @@
     padding: 6px;
     cursor: pointer;
     font-weight: bold;
+    width: 30%;
 }
 
 .previewCard-clear-button:hover{
@@ -101,10 +104,9 @@
 
 .previewCard-caret-button{
     background-color: transparent;
-    color: #AA0AFF;
-    border: 2px solid #AA0AFF;
+    color: #B80ABF;
+    border: 2px solid #B80ABF;
     border-radius: 100%;
-    padding: 3%;
     margin-right: 18%;
 }
 

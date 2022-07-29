@@ -123,7 +123,7 @@ const PreviewCard = () => {
                 </div>}
                 <div className='previewCard-button-section'>
                     <button className='previewCard-caret-button' onClick={toggleDetail}>{!detail ? <FontAwesomeIcon icon={faCaretDown}/> : <FontAwesomeIcon icon={faCaretUp} />}</button>
-                    <button className='previewCard-addTeam-button' onClick={addTeam}>Add to Team</button>
+                    <button className='previewCard-addTeam-button' onClick={addTeam}>Add</button>
                     <button className='previewCard-clear-button' onClick={clearSelection}>Clear</button>
                 </div>
             </div>}
